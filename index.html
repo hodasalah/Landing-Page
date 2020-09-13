@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Manipulating the DOM</title>
+	<!-- Load Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,669;0,700;0,800;0,900;1,669;1,700;1,800;1,900&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;1,600;1,700&display=swap" rel="stylesheet">
+	<!-- FONT AWESOME-->
+	<link href="css/all.min.css" rel="stylesheet">
+	<!-- Load Styles -->
+	<link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+	<!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+	<header class="page__header">
+		<nav class="navbar__menu">
+			<div class="container">
+				<div class="row">
+					<!--logo  -->
+					<h2 class="logo"><span>h</span>P</h2>
+					<!-- Navigation starts as empty UL that will be populated with JS -->
+					<ul class="navbar__list"></ul>
+					<!-- Mobile button Navigation Menu -->
+					<div class="btn-toggle">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<!-- Hero Section -->
+		<header class="main__hero">
+			<div class="container">
+				<div class="row">
+					<div class="sec__info col">
+						<h3>Landing Page </h3>
+						<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat rerum obcaecati provident aut quae cumque facere cum vitae dignissimos pariatur.</p>
+						<button class="main-btn">Read More</button>
+					</div>
+					<div class="col"></div>
+				</div>
+			</div>
+		</header>
+
+		<!-- About Section -->
+		<section id="section1" data-nav="About Us" class="about">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="sec__img">
+							<img src="./img/bl-2.jpg">
+						</div>
+					</div>
+					<div class="col">
+						<div class="sec__info">
+							<h3>About Us </h3>
+							<h2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h2>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat rerum obcaecati provident aut quae cumque facere cum vitae dignissimos pariatur.
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat rerum obcaecati provident aut quae cumque facere cum vitae dignissimos pariatur.
+							</p>
+							<button class="main-btn">Read More</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Services Section -->
+		<section id="section2" data-nav="Services" class="serv">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="main-info text-center">
+							<h2>Your Ears Deserve The Best</h2>
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur incidunt tempore quibusdam, veniam quis, laudantium ea nam commodi alias reiciendis velit ducimus ullam accusamus labore sit numquam ad laboriosam beatae.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row text-center">
+					<!-- Col-1 -->
+					<div class="col">
+						<div class="card">
+							<div class="icon-wrap">
+								<i class="fas fa-glasses"></i>
+							</div>
+							<div class="info text-center">
+								<h4>Get the right gadget</h4>
+								<p>Donec ipsum neque, tincidunt non auctor at, finibus vitae nunc. Fusce sagittis, tortor sed viverra elementum, odio odio tempus quam, ac imperdiet dui lacus eu magna. </p>
+								<button class="main-btn">Read More</button>
+							</div>
+						</div>
+					</div>
+					<!-- Col-2 -->
+					<div class="col">
+						<div class="card">
+							<div class="icon-wrap">
+								<i class="fas fa-headphones-alt"></i>
+							</div>
+							<div class="info text-center">
+								<h4>Get the right gadget</h4>
+								<p>Donec ipsum neque, tincidunt non auctor at, finibus vitae nunc. Fusce sagittis, tortor sed viverra elementum, odio odio tempus quam, ac imperdiet dui lacus eu magna. </p>
+								<button class="main-btn">Read More</button>
+							</div>
+						</div>
+					</div>
+					<!-- Col-3 -->
+					<div class="col">
+						<div class="card">
+							<div class="icon-wrap">
+								<i class="fas fa-wifi"></i>
+							</div>
+							<div class="info text-center">
+								<h4>Get the right gadget</h4>
+								<p>Donec ipsum neque, tincidunt non auctor at, finibus vitae nunc. Fusce sagittis, tortor sed viverra elementum, odio odio tempus quam, ac imperdiet dui lacus eu magna. </p>
+								<button class="main-btn">Read More</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Features Section -->
+		<section id="section3" data-nav="Features" class="feat">
+			<div class="landing__container text-center">
+				<h2>Why you should buy our Products?</h2>
+				<div class="row">
+					<div class="col">
+						<img src="./img/img-5.jpg" alt=" baby with headphone" class="img-block__img">
+					</div>
+					<div class="col">
+						<div class="sec__info">
+							<h3>Special Features</h3>
+							<h2>Extra Depth to the full and Crisp Sound</h2>
+							<div class="feat_info">
+								<h4><span class="fab fa-bluetooth"></span> Bluetooth Wireless Technology</h4>
+								<h4><span class="fa fa-link"></span> Removable Stability Ear Gels for Secure Fit</h4>
+								<h4><span class="fa fa-battery-full"></span> Up to 16 Hours of Total Battery Life</h4>
+								<h4><span class="fa fa-tint"></span> IP55 Sweat, Water and Dust Resistant</h4>
+								<h4><span class="fa fa-microphone"></span> Call, Track and Volume via Touch Controls
+								</h4>
+								<h4><span class="fa fa-volume-up"></span> Noise Reduction for Calls</h4>
+							</div>
+							<button class="main-btn">Buy now</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Category Section -->
+		<section id="section4" data-nav="Our Category" class="cat">
+			<div class="container text-center info-cat">
+				<div class="row">
+					<div class="col">
+						<h2>Our Category</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nesciunt odit, pariatur aperiam, nemo, explicabo fugit voluptatem deleniti dolores error magni ad ipsum modi! Neque dolor commodi deserunt expedita esse.</p>
+					</div>
+				</div>
+			</div>
+			<!-- Start Products Row -->
+			<div class="row">
+				<!-- col-1 -->
+				<div class="col">
+					<div class="p-card">
+						<div class="content">
+							<div class="front">
+								<img src="img/p1.jpg">
+							</div>
+							<div class="back">
+								<div class="info-card text-center">
+									<h4>Bluetooth Earphone</h4>
+									<div class="stars">★★★★★</div>
+									<div class="price"><span>$</span>150</div>
+									<button class="main-btn">Buy now</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- col-2 -->
+				<div class="col">
+					<div class="p-card">
+						<div class="content">
+							<div class="front">
+								<img src="img/p2.jpg">
+							</div>
+							<div class="back">
+								<div class="info-card text-center">
+									<h4>Bluetooth Earphone</h4>
+									<div class="stars">★★★★★</div>
+									<div class="price"><span>$</span>150</div>
+									<button class="main-btn">Buy now</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- col-3 -->
+				<div class="col">
+					<div class="p-card">
+						<div class="content">
+							<div class="front">
+								<img src="img/p3.jpg">
+							</div>
+							<div class="back">
+								<div class="info-card text-center">
+									<h4>Bluetooth Earphone</h4>
+									<div class="stars">★★★★★</div>
+									<div class="price"><span>$</span>150</div>
+									<button class="main-btn">Buy now</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- col-4 -->
+				<div class="col">
+					<div class="p-card">
+						<div class="content">
+							<div class="front">
+								<img src="img/p4.jpg">
+							</div>
+							<div class="back">
+								<div class="info-card text-center">
+									<h4>Bluetooth Earphone</h4>
+									<div class="stars">★★★★★</div>
+									<div class="price"><span>$</span>150</div>
+									<button class="main-btn">Buy now</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- col-5 -->
+				<div class="col">
+					<div class="p-card">
+						<div class="content">
+							<div class="front">
+								<img src="img/p5.jpg">
+							</div>
+							<div class="back">
+								<div class="info-card text-center">
+									<h4>Bluetooth Earphone</h4>
+									<div class="stars">★★★★★</div>
+									<div class="price"><span>$</span>150</div>
+									<button class="main-btn">Buy now</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- col-6 -->
+				<div class="col">
+					<div class="p-card">
+						<div class="content">
+							<div class="front">
+								<img src="img/p6.jpg">
+							</div>
+							<div class="back">
+								<div class="info-card text-center">
+									<h4>Bluetooth Earphone</h4>
+									<div class="stars">★★★★★</div>
+									<div class="price"><span>$</span>150</div>
+									<button class="main-btn">Buy now</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Col-7 -->
+				<div class="col">
+					<div class="p-card">
+						<div class="content">
+							<div class="front">
+								<img src="img/p7.jpg">
+							</div>
+							<div class="back">
+								<div class="info-card text-center">
+									<h4>Bluetooth Earphone</h4>
+									<div class="stars">★★★★★</div>
+									<div class="price"><span>$</span>150</div>
+									<button class="main-btn">Buy now</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Col-8 -->
+				<div class="col">
+					<div class="p-card">
+						<div class="content">
+							<div class="front">
+								<img src="img/p8.jpg">
+							</div>
+							<div class="back">
+								<div class="info-card text-center">
+									<h4>Bluetooth Earphone</h4>
+									<div class="stars">★★★★★</div>
+									<div class="price"><span>$</span>150</div>
+									<button class="main-btn">Buy now</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Col-9 -->
+				<div class="col">
+					<div class="p-card">
+						<div class="content">
+							<div class="front">
+								<img src="img/p9.jpg">
+							</div>
+							<div class="back">
+								<div class="info-card text-center">
+									<h4>Bluetooth Earphone</h4>
+									<div class="stars">★★★★★</div>
+									<div class="price"><span>$</span>150</div>
+									<button class="main-btn">Buy now</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Blog Section -->
+		<section id="section5" data-nav="Our Blog" class="blog">
+			<div class="container text-center">
+				<!-- Section Title -->
+				<h2>From Our Blog</h2>
+				<div class="row">
+					<!-- col-1 -->
+					<div class="col">
+						<div class="blog-card">
+							<div class="img-blog">
+								<img src="img/bl-1.jpg" alt="blog article">
+							</div>
+							<div class="info-blog">
+								<h4>Sport comfort earbud</h4>
+								<div class="art-header">
+									<p>by <span>Hoda Salah</span></p>
+									<p>/ <time><span>SEP 08 2020</span></time> |</p>
+									<p> 1 comments</p>
+								</div>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo error nobis voluptate id aspernatur ...</p>
+							</div>
+							<button class="main-btn">Read More</button>
+						</div>
+					</div>
+					<!-- col-2 -->
+					<div class="col">
+						<div class="blog-card">
+							<div class="img-blog">
+								<img src="img/bl-2.jpg" alt="blog article">
+							</div>
+							<div class="info-blog">
+								<h4>Triple Driver In-Ear</h4>
+								<div class="art-header">
+									<p>by <span>Hoda Salah</span></p>
+									<p>/ <time><span>SEP 08 2020</span></time> |</p>
+									<p> 1 comments</p>
+								</div>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo error nobis voluptate id aspernatur ...</p>
+							</div>
+							<button class="main-btn">Read More</button>
+						</div>
+					</div>
+					<!-- col-3 -->
+					<div class="col">
+						<div class="blog-card">
+							<div class="img-blog">
+								<img src="img/bl-3.jpg" alt="blog article">
+							</div>
+							<div class="info-blog">
+								<h4>Take Fingertip Control</h4>
+								<div class="art-header">
+									<p>by <span>Hoda Salah</span></p>
+									<p>/ <time><span>SEP 08 2020</span></time> |</p>
+									<p> 1 comments</p>
+								</div>
+								<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo error nobis voluptate id aspernatur ...</p>
+							</div>
+							<button class="main-btn">Read More</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<!-- Back to Top Button -->
+	<button id="myBtn">
+		<i class="fa fa-arrow-up"></i>
+	</button>
+	<!-- Footer -->
+	<footer class="page__footer text-center">
+		<h2 class="logo"><span>h</span>P</h2>
+		<div class="container">
+			<!-- newsletter -->
+			<div class="news">
+				<div class="text-center">
+					<h4 class="newslet_title" style="color:#ffffff;">Subscribe Our Newsletter</h4>
+				</div>
+				<div class="sub">
+					<form action="" class="contact-form">
+						<input type="email" value="" placeholder="Email address" name="contact[email]" class="mail">
+						<input type="hidden" value="newsletter">
+
+						<button type="submit" class="btn subscribe" name="subscribe" value="">Subscribe</button>
+					</form>
+				</div>
+			</div>
+			<!-- social links -->
+			<ul class="social-list">
+				<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+				<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+			</ul>
+		</div>
+		<div class="bottom-fot text-center">
+			<p>&copy Udacity</p>
+		</div>
+	</footer>
+	<script src="js/app.js"></script>
+</body>
+
+</html>
+<!-- © 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
+ -->
